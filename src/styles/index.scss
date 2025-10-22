@@ -1,0 +1,20 @@
+@use '_variables' as v;
+// 导入所有全局样式
+@forward '_variables';
+@forward 'mixins';
+@forward 'reset';
+@forward 'common';
+
+// 可以在这里添加其他全局样式
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 v.$spacing-md;
+}
+
+.page-title {
+  font-size: v.$font-size-xl;
+  margin-bottom: v.$spacing-lg;
+  color: $secondary;
+}

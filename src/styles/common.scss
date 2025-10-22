@@ -1,0 +1,44 @@
+// 按钮样式
+.btn {
+  display: inline-block;
+  padding: v.$spacing-sm v.$spacing-md;
+  border-radius: $border-radius;
+  border: none;
+  font-size: v.$font-size-base;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &.btn-primary {
+    background-color: v.$primary;
+    color: white;
+    &:hover {
+      background-color: scale-color(v.$primary, 10%);
+    }
+  }
+  
+  &.btn-danger {
+    background-color: v.$danger;
+    color: white;
+    &:hover {
+      background-color: scale-color(v.$danger, 10%);
+    }
+  }
+}
+
+// 卡片样式
+.card {
+  border-radius: v.$border-radius;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  
+  .card-header {
+    padding: v.$spacing-md;
+    border-bottom: 1px solid #e5e7eb;
+    font-weight: bold;
+  }
+  
+  .card-body {
+    padding: v.$spacing-md;
+  }
+}

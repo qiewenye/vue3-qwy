@@ -1,0 +1,16 @@
+@use '../abstracts' as a;
+
+header{
+    width: 100%;
+    position: relative;
+    height: 3rem;
+    background-color: a.$primary;
+    display: flex;
+    justify-content: space-between;
+    @include a.shadow;
+    z-index: 201;
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.3 ease-in-out;
+
+}

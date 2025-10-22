@@ -1,0 +1,9 @@
+// 深色主题变量（覆盖默认变量）
+$color-background: #ffffff;
+$color-text: #2b2b2b;
+
+// 深色主题样式
+.theme-light {
+  background: $color-background;
+  color: $color-text;
+}

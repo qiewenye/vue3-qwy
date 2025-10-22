@@ -1,0 +1,15 @@
+// 引入基础样式（会生成全局 CSS）
+@use './base';
+
+// 引入布局样式
+@use './layout';
+
+// 引入组件样式
+@use './components';
+
+// 引入页面样式（按需引入，避免不必要的代码）
+@use './pages/home';
+@use './pages/detail';
+
+// 引入主题样式（可选）
+@use './themes';
