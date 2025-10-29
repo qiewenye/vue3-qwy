@@ -1,6 +1,6 @@
 @use '../abstracts' as a;
 
-header{
+header {
     width: 100%;
     position: relative;
     height: 3rem;
@@ -12,5 +12,34 @@ header{
     opacity: 1;
     pointer-events: auto;
     transition: 0.3 ease-in-out;
+}
 
+.tool {
+    &-left {
+        min-width: 464px;
+        width: 464px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    &-center {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        flex: 1 1 0%;
+        -webkit-box-pack: center;
+        justify-content: center;
+        max-width: calc(100% - 596px);
+        min-width: 334px;
+    }
+
+    &-right {
+        min-width: 464px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+    }
 }
