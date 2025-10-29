@@ -29,6 +29,9 @@ const { menuList } = props.store;
       <MenuButton>
         <IconLine></IconLine>
       </MenuButton>
+      <MenuButton>
+        <IconEcosystem></IconEcosystem>
+      </MenuButton>
     </div>
     <div class="tool-right"></div>
   </header>
