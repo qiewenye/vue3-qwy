@@ -1,0 +1,9 @@
+@use '../abstracts' as a;
+
+.panle {
+    width: $panle-width;
+
+    &-title {
+        font-size: a.$font-size-xs;
+    }
+}
